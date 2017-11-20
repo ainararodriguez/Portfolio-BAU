@@ -1,5 +1,39 @@
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 72px;
-    font-weight: 600px;
+    font-weight: 900;
+    color: #f95658;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #f95658;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #f95658;
+    text-align: left;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #f95658;
+    text-align: center;
+}
+
+.titledescription {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #455A64;
+    text-align: center;
 }
