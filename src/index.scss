@@ -1,2 +1,15 @@
+@import 'utils/resetcss.scss';
 @import 'utils/colors';
 @import 'utils/typography';
+@import 'utils/buttons';
+@import 'utils/breakpoints';
+
+@import 'components/page/home';
+
+@import 'components/footer/footer';
+
+@import 'components/navigation/menu';
+
+@import 'components/molecules/card_proyecto';
+@import 'components/molecules/icon_title';
+@import 'components/molecules/hablamos';

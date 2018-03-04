@@ -1,3 +1,399 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   font-family: 'Muli', sans-serif;
+  color: #051982;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 3.75rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2.75rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+.negative {
+  color: white;
+}
+
+button {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  color: white;
+}
+
+button {
+  border: none;
+  background-color: #FF0074;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(2px, 2px);
+}
+
+.enlaceProyectos {
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  color: #FF0074;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: #051982;
+}
+
+/*MAIN*/
+.mainHome {
+  background-image: url("../img/mainfoto_small.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-color: #50E3C2;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  margin-bottom: 3rem;
+}
+
+.text1 {
+  margin-bottom: 0.75rem;
+}
+
+.text2 {
+  margin-bottom: 2.25rem;
+}
+
+.mainDescription {
+  display: flex;
+  padding-bottom: 3rem;
+}
+
+.mainDescriptionTextButton {
+  color: white;
+  margin-left: 0.75rem;
+}
+
+.mainDescriptionText {
+  margin-bottom: 1.5rem;
+}
+
+/*SECTIONS*/
+section {
+  padding: 1.5rem;
+}
+
+/*SECTION AREAS DE TRABAJO Y SOBRE MI*/
+.areasTrabajoYSobremi {
+  background-image: url("../img/bcg_areas_small.jpg");
+  background-size: cover;
+  background-position: 50%;
+  color: white;
+  padding-top: 3rem;
+}
+
+.lineList {
+  display: flex;
+}
+
+.areasTrabajo {
+  margin-bottom: 3rem;
+}
+
+.sobreMiDescription {
+  margin-bottom: 1.5rem;
+}
+
+.enlaceSobreMi {
+  color: white;
+  margin: 1.5rem 0 4.5rem 0;
+}
+
+/* RESPONSIVE MEDIUM SIZE */
+@media only screen and (min-width: 768px) {
+  section {
+    padding-left: 3rem;
+  }
+  .mainHome {
+    background-image: url("../img/mainfoto_medium.jpg");
+    padding-left: 3rem;
+  }
+  .mainHomeContent {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .mainTitles, .line {
+    padding-left: 6rem;
+  }
+  .mainDescriptionText {
+    width: 60%;
+  }
+  .areasTrabajoYSobremiContent {
+    max-width: 1024px;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+  }
+  .sobreMi {
+    width: 40%;
+    margin-left: 6rem;
+  }
+}
+
+footer {
+  background-color: #01082A;
+}
+
+.footerContent {
+  padding: 0 1.5rem;
+}
+
+.logoFooter {
+  padding: 1.5rem 0 3rem 0;
+}
+
+.items {
+  color: #50E3C2;
+  padding-bottom: 3rem;
+}
+
+.footerItems {
+  line-height: 3rem;
+}
+
+.credits {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.lineaVerde {
+  background-color: #50E3C2;
+  width: 800px;
+  height: 1.5rem;
+}
+
+hr {
+  -webkit-margin-after: 0px;
+}
+
+/* RESPONSIVE MEDIUM SIZE */
+@media only screen and (min-width: 768px) {
+  .logoFooter {
+    display: flex;
+    justify-content: center;
+  }
+  .footerContent {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .items {
+    display: flex;
+    justify-content: center;
+  }
+  .footerItems {
+    margin-right: 3rem;
+  }
+}
+
+nav {
+  display: flex;
+}
+
+.navItems {
+  display: flex;
+}
+
+.itemText {
+  color: #526EFF;
+}
+
+.iconItem {
+  vertical-align: middle;
+}
+
+.cardProyecto {
+  padding-bottom: 4.5rem;
+}
+
+.imgCardProyecto {
+  margin-bottom: 0px;
+  max-width: 100%;
+}
+
+.cardAreaTrabajo {
+  color: #526EFF;
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  margin-bottom: 3rem;
+}
+
+/* RESPONSIVE MEDIUM SIZE */
+@media only screen and (min-width: 768px) {
+  .ultimosProyectos {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .cardProyecto {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .cardTextButton {
+    margin: 1.5rem 3rem 0 0;
+    min-width: 30%;
+  }
+  .imgCardProyecto {
+    width: 50%;
+    height: 100%;
+  }
+}
+
+.iconTitle {
+  margin-bottom: 0.75rem;
+}
+
+.iconSection {
+  margin-bottom: 0.75rem;
+}
+
+.proyectostitle {
+  margin-bottom: 3rem;
+}
+
+.areasDeTrabajoTitle {
+  margin-bottom: 1.5rem;
+}
+
+/*SECTION HABLAMOS*/
+.aboutBanner {
+  background: linear-gradient(to bottom, #31DEC4, #00B095);
+}
+
+.mail {
+  margin-bottom: 2.5rem;
+}
+
+.mailLink {
+  color: #051982;
+  margin-bottom: 0.75rem;
+}
+
+.mailDescription {
+  color: white;
+}
+
+.linkedin {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.linkedinText {
+  color: white;
+}
+
+.linkedinIcon {
+  margin-left: 1.5rem;
+}
+
+/* RESPONSIVE MEDIUM SIZE */
+@media only screen and (min-width: 768px) {
+  .aboutBannerSection {
+    max-width: 1024px;
+    margin: auto;
+  }
 }

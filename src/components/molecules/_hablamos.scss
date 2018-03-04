@@ -1,0 +1,41 @@
+/*SECTION HABLAMOS*/
+
+.aboutBanner{
+    background: linear-gradient(to bottom, #31DEC4, #00B095);
+}
+
+.mail{
+    margin-bottom: 2.5rem;
+}
+
+.mailLink{
+    color: $c-main_text;
+    margin-bottom: 0.75rem;
+}
+
+.mailDescription{
+    color: $c-negative;
+}
+
+.linkedin{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.linkedinText{
+    color: $c-negative;
+}
+
+.linkedinIcon{
+    margin-left: 1.5rem;
+}
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: 768px){
+    .aboutBannerSection{
+        max-width: 1024px;
+        margin: auto;
+    }
+}

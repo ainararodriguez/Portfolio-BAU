@@ -1,0 +1,62 @@
+footer{
+    background-color: #01082A;
+}
+
+.footerContent{
+    padding: 0 1.5rem;
+}
+
+.logoFooter{
+    padding: 1.5rem 0 3rem 0;
+}
+
+.items{
+    color: $c-sec_action;
+    padding-bottom: 3rem;
+}
+
+.footerItems{
+    line-height: 3rem;
+}
+
+.credits{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-bottom: 0.75rem;
+    font-size: 0.75rem;
+}
+
+.lineaVerde{
+    background-color: $c-sec_action;
+    width: 800px;
+    height: 1.5rem;;
+}
+
+hr{
+    -webkit-margin-after: 0px;
+}
+
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: 768px){
+    .logoFooter{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerContent{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .items{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerItems{
+        margin-right: 3rem;
+    }
+}

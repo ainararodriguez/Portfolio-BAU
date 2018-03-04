@@ -1,0 +1,111 @@
+/*MAIN*/
+
+.mainHome{
+    background-image: url("../img/mainfoto_small.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: $c-sec_action;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.logo{
+    margin-bottom: 3rem;
+}
+
+.text1{
+    margin-bottom: 0.75rem;
+}
+
+.text2{
+    margin-bottom: 2.25rem;
+}
+
+.mainDescription{
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+.mainDescriptionTextButton{
+    color: $c-negative;
+    margin-left: 0.75rem;
+}
+
+.mainDescriptionText{
+    margin-bottom: 1.5rem;
+}
+
+
+/*SECTIONS*/
+
+section{
+    padding: 1.5rem; 
+}
+
+
+/*SECTION AREAS DE TRABAJO Y SOBRE MI*/
+
+.areasTrabajoYSobremi{
+    background-image: url("../img/bcg_areas_small.jpg");
+    background-size: cover;
+    background-position: 50%;
+    color: $c-negative;
+    padding-top: 3rem;
+}
+
+.lineList{
+    display: flex;
+}
+
+.areasTrabajo{
+    margin-bottom: 3rem;
+}
+
+.sobreMiDescription{
+    margin-bottom: 1.5rem;
+}
+
+.enlaceSobreMi{
+    color: $c-negative;
+    margin: 1.5rem 0 4.5rem 0;
+}
+
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: 768px){
+    section{
+        padding-left: 3rem; 
+    }
+    
+    .mainHome{
+        background-image: url("../img/mainfoto_medium.jpg");
+        padding-left: 3rem;
+    }
+
+    .mainHomeContent{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .mainTitles, .line{
+        padding-left: 6rem;
+    }
+
+    .mainDescriptionText{
+        width: 60%;
+    }
+
+    .areasTrabajoYSobremiContent{
+        max-width: 1024px;
+        display: flex;
+        justify-content: flex-start;
+        margin: auto;
+    }
+    .sobreMi{
+        width: 40%;
+        margin-left: 6rem;
+    }
+
+}
