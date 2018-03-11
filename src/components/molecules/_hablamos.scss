@@ -33,7 +33,7 @@
 
 /* RESPONSIVE MEDIUM SIZE */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: $MQ-M){
     .aboutBannerSection{
         max-width: 1024px;
         margin: auto;

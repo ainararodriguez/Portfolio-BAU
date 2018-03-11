@@ -4,12 +4,14 @@
 @import 'utils/buttons';
 @import 'utils/breakpoints';
 
+@import 'components/molecules/card_proyecto';
+@import 'components/molecules/icon_title';
+@import 'components/molecules/hablamos';
+@import 'components/molecules/timeline';
+
 @import 'components/page/home';
+@import 'components/page/about';
 
 @import 'components/footer/footer';
 
 @import 'components/navigation/menu';
-
-@import 'components/molecules/card_proyecto';
-@import 'components/molecules/icon_title';
-@import 'components/molecules/hablamos';

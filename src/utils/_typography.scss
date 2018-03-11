@@ -2,6 +2,7 @@ body{
     font-family: 'Muli', sans-serif;
     color: $c-main_text;
     margin: 0;
+    box-sizing: content-box;
 }
 
 h1{

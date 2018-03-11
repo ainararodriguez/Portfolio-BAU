@@ -1,0 +1,59 @@
+.timeline{
+    background-image: url(../img/line.png);
+    background-repeat: repeat-y;
+    overflow: auto;
+    margin-bottom: 60px;
+}
+
+.experienciaTitle{
+    color:$c-sec_text;
+}
+
+.eventTimeline{
+    display: flex;
+}
+
+.eventTitle{
+    text-transform: uppercase;
+    font-size:1,625rem;
+    font-weight: bold;
+    color: $c-sec_text; 
+}
+.lastEvent{
+    background-color: white;
+}
+.timeline span {
+    display:block;
+    position: absolute;
+    background: $c-sec_text;
+    margin-left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin-top:6px;
+}
+.blankFirst{
+    display:block;
+    position: absolute;
+    background: white;
+    margin-left: -6px;
+    width: 12px;
+    height: 12px;
+}
+.blankLast{
+    display:block;
+    position: absolute;
+    background: white;
+    margin-left: -6px;
+    width: 12px;
+    height: 178px;
+    margin-top:18px;
+}
+.textoTimeline{
+    margin-left: 1.5rem;
+    margin-bottom: 52px;
+}
+.eventTimeline h5{
+    margin-left: 1.5rem;
+    margin-bottom: 6px;
+}

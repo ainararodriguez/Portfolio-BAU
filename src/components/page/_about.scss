@@ -1,0 +1,132 @@
+.hero{
+    background-image: url("../img/mainfoto_small.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: $c-sec_action;
+    background-size: cover;
+    padding: 3rem 1.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-description{
+    margin-bottom: 3rem;
+}
+.hero-objetivos-lineDescription{
+    display: flex;
+}
+
+.hero-objetivos-description{
+    margin-left: 1.5rem;
+}
+
+.about-description-text{
+    margin-bottom: 0.75rem;
+}
+
+.about-description-text1, 
+.about-description-text2{
+    margin-bottom: 0.75rem;
+}
+
+.about-description-text-last{
+    margin-bottom: 2rem;
+}
+
+.habilidadesYSoftwares{
+    background-color: $c-sec_action;
+}
+
+
+
+
+//HEXAGONOS
+
+:root {
+    /* Change this to change the appearance of the hexaons */
+    --hex-width: 104px; 
+    --hex-between: 6px;
+    
+    /* Other hexagon dimention calculations */  
+    --hex-height: calc(2 * var(--hex-width) / 1.732 /* sqrt(3) */ );
+    --hex-Yoffset: calc(var(--hex-width) / (2*1.732 /* sqrt(3) */ ));
+}
+    
+svg{width: var(--hex-width);}
+    
+.habilidadesYSoftwares{
+    background-image: url("../img/bcg_habilidades.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //background-color: $c-sec_action;
+    //padding: 3rem 1.5rem 1.5rem;
+    //margin-bottom: 1.5rem;
+}
+
+.hex-habilidades, .hex-software{
+    margin-bottom: 2.5rem;
+}
+
+.hexagons {
+    width: calc( 3*var(--hex-width) + 2*var(--hex-between));
+    display: grid;
+    grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width);
+    grid-auto-rows: calc(var(--hex-height) - var(--hex-Yoffset));
+    grid-gap: var(--hex-between) var(--hex-between);
+    padding-bottom: var(--hex-Yoffset);
+}
+    
+.hexagon{fill: rgba(255,255,255,0.9);}
+    
+text{
+    fill: #051982;
+    font-family:'Muli';
+    font-size:0.85rem;
+    line-height:1rem;
+}
+    
+//.software{margin-top: 100px;}
+    
+.hex-hidden{visibility:hidden;}
+ 
+.hexagon:nth-child(6n+1),
+.hexagon:nth-child(6n+2),
+.hexagon:nth-child(6n+3){
+    margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+}
+
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: $MQ-M){
+    .hero{
+        background-size: initial;
+    }
+
+    .hero-content{
+        padding-left: 1.5rem;
+    }
+
+    .about-description{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .about-description-item{
+        max-width: 450px;
+    }
+
+    .about-description-text1{
+        margin-right: 3rem;
+    }
+
+    .hexagonsContainers{
+        display: flex;
+    }
+
+    .softwaresItem{
+        margin-left: 3rem;
+        margin-top: 62px;
+    }
+}

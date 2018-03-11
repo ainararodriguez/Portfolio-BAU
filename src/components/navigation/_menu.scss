@@ -1,15 +1,40 @@
 nav{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoMenu{
+    width: auto;
+    padding-left: 1.5rem;
+}
+
+.navMenu{
+//    min-width: 40%;
+padding-right: 1.5rem;
 }
 
 .navItems{
     display: flex;
+    justify-content: space-around;
 }
 
 .itemText{
     color: $c-sec_text;
+    font-size: 12px;
+
 }
 
-.iconItem{
-    vertical-align: middle;
+.iconText{
+    text-align: center;
+    padding: .5rem .25rem;
+}
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: $MQ-M){
+    nav{
+        max-width: 1024px;;
+    }
 }

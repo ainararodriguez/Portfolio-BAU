@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: right top;
     background-color: $c-sec_action;
+    background-size: cover;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -74,7 +75,7 @@ section{
 
 /* RESPONSIVE MEDIUM SIZE */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: $MQ-M){
     section{
         padding-left: 3rem; 
     }
