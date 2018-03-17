@@ -34,6 +34,7 @@
 
 .habilidadesYSoftwares{
     background-color: $c-sec_action;
+    margin-bottom: 3rem;
 }
 
 
@@ -51,7 +52,7 @@
     --hex-Yoffset: calc(var(--hex-width) / (2*1.732 /* sqrt(3) */ ));
 }
     
-svg{width: var(--hex-width);}
+.hexSvgWidth{width: var(--hex-width);}
     
 .habilidadesYSoftwares{
     background-image: url("../img/bcg_habilidades.png");

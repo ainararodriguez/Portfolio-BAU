@@ -38,4 +38,19 @@
         max-width: 1024px;
         margin: auto;
     }
+
+    .aboutBanner{
+        background: linear-gradient(to bottom, #31DEC4, #00B095);
+    }
+
+    .contactBcg{
+        background: linear-gradient(to bottom, #31DEC4, #00B095);
+    }
+
+    .footerContact{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
 }

@@ -1,11 +1,15 @@
 nav{
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.navContent{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logoMenu{
-    width: auto;
     padding-left: 1.5rem;
 }
 
@@ -27,14 +31,28 @@ padding-right: 1.5rem;
 
 .iconText{
     text-align: center;
-    padding: .5rem .25rem;
+    padding: .5rem;
 }
+
 
 
 /* RESPONSIVE MEDIUM SIZE */
 
 @media only screen and (min-width: $MQ-M){
-    nav{
-        max-width: 1024px;;
+
+    .navContent{
+        max-width: 1024px;
     }
+
+    .itemText:hover{
+        color: $c-main_action;
+    }
+
+    .logoMenu:hover,
+    .proyectosIconMenu:hover,
+    .sobremiIconMenu:hover,
+    .hablamosIconMenu:hover{
+        fill: $c-main_action;
+    }
+
 }

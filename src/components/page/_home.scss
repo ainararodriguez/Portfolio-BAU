@@ -8,19 +8,14 @@
     background-size: cover;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+    height: 100vh;
 }
 
-.logo{
-    margin-bottom: 3rem;
-}
+.logo{margin-bottom: 3rem;}
 
-.text1{
-    margin-bottom: 0.75rem;
-}
+.text1{margin-bottom: 0.75rem;}
 
-.text2{
-    margin-bottom: 2.25rem;
-}
+.text2{margin-bottom: 2.25rem;}
 
 .mainDescription{
     display: flex;
@@ -32,19 +27,17 @@
     margin-left: 0.75rem;
 }
 
-.mainDescriptionText{
-    margin-bottom: 1.5rem;
-}
+.mainDescriptionText{margin-bottom: 1.5rem;}
 
 
 /*SECTIONS*/
 
-section{
-    padding: 1.5rem; 
-}
+section{padding: 1.5rem;}
 
 
 /*SECTION AREAS DE TRABAJO Y SOBRE MI*/
+
+.areasIcon, .sobremiIcon, .hablamosIcon{margin-bottom: 0.75rem}
 
 .areasTrabajoYSobremi{
     background-image: url("../img/bcg_areas_small.jpg");
@@ -54,17 +47,11 @@ section{
     padding-top: 3rem;
 }
 
-.lineList{
-    display: flex;
-}
+.lineList{display: flex;}
 
-.areasTrabajo{
-    margin-bottom: 3rem;
-}
+.areasTrabajo{margin-bottom: 3rem;}
 
-.sobreMiDescription{
-    margin-bottom: 1.5rem;
-}
+.sobreMiDescription{margin-bottom: 1.5rem;}
 
 .enlaceSobreMi{
     color: $c-negative;
@@ -76,9 +63,7 @@ section{
 /* RESPONSIVE MEDIUM SIZE */
 
 @media only screen and (min-width: $MQ-M){
-    section{
-        padding-left: 3rem; 
-    }
+    section{padding-left: 3rem; }
     
     .mainHome{
         background-image: url("../img/mainfoto_medium.jpg");
@@ -90,13 +75,9 @@ section{
         margin: auto;
     }
 
-    .mainTitles, .line{
-        padding-left: 6rem;
-    }
+    .mainTitles, .line{padding-left: 6rem;}
 
-    .mainDescriptionText{
-        width: 60%;
-    }
+    .mainDescriptionText{width: 60%;}
 
     .areasTrabajoYSobremiContent{
         max-width: 1024px;

@@ -16,6 +16,26 @@
     margin-bottom: 3rem;
 }
 
+.enlacehidden{
+    visibility: hidden;
+}
+
+.cardTextArrow{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.arrow{
+     margin-top: 4px;
+}
+
+.enlaceProyectos{
+    color:$c-main_action !important;
+}
+
+
+
 
 
 /* RESPONSIVE MEDIUM SIZE */
@@ -40,5 +60,13 @@
     .imgCardProyecto{
         width: 50%;
         height: 100%;
+    }
+
+    .enlacehidden{
+        visibility: visible;
+    }
+
+    .arrow{
+        visibility: hidden;
     }
 }

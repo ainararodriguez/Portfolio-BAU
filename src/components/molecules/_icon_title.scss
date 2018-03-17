@@ -1,15 +1,18 @@
-.iconTitle{
-    margin-bottom: 0.75rem;
-}
+.iconTitle{margin-bottom: 0.75rem;}
 
-.iconSection{
-    margin-bottom: 0.75rem;
-}
+.iconSection{margin-bottom: 0.75rem;}
 
-.proyectostitle{
-    margin-bottom: 3rem;
-}
+.sectionTitle{
+    margin-bottom: 3rem;}
 
-.areasDeTrabajoTitle{
-    margin-bottom: 1.5rem;
+.proyectostitle{color: $c-sec_text;}
+
+.areasDeTrabajoTitle{margin-bottom: 1.5rem;}
+
+.proyectosIcon, 
+.objetivosIcon, 
+.skillsIcon, 
+.experienciaIcon, 
+.estudiosIcon{
+    margin-bottom: 0.75rem
 }

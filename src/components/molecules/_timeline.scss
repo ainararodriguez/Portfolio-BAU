@@ -1,27 +1,26 @@
+.timelines{
+    margin-bottom: 3rem;
+}
 .timeline{
     background-image: url(../img/line.png);
     background-repeat: repeat-y;
     overflow: auto;
-    margin-bottom: 60px;
+    margin-bottom: 2.5rem;
+    margin-left: -1rem;
 }
 
-.experienciaTitle{
-    color:$c-sec_text;
-}
+.experienciaTitle{color:$c-sec_text;}
 
-.eventTimeline{
-    display: flex;
-}
+.eventTimeline{display: flex;}
 
 .eventTitle{
     text-transform: uppercase;
-    font-size:1,625rem;
     font-weight: bold;
     color: $c-sec_text; 
 }
-.lastEvent{
-    background-color: white;
-}
+
+.lastEvent{background-color: white;}
+
 .timeline span {
     display:block;
     position: absolute;
@@ -32,6 +31,7 @@
     border-radius: 100%;
     margin-top:6px;
 }
+
 .blankFirst{
     display:block;
     position: absolute;
@@ -40,20 +40,40 @@
     width: 12px;
     height: 12px;
 }
-.blankLast{
+
+.blankLast, .blankLastlast{
     display:block;
     position: absolute;
     background: white;
     margin-left: -6px;
     width: 12px;
-    height: 178px;
     margin-top:18px;
 }
+
+.blankLast{height: 178px;}
+
+.blankLastlast{height:246px;}
+
 .textoTimeline{
-    margin-left: 1.5rem;
-    margin-bottom: 52px;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
 }
-.eventTimeline h5{
-    margin-left: 1.5rem;
-    margin-bottom: 6px;
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: $MQ-M){
+    .timelines{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .experienciaProfesional, .experienciaEstudios{
+        //width: 50%;
+        max-width: 450px;
+    }
+
+    .experienciaProfesional{
+        margin-right: 3rem;
+    }
 }
