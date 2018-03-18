@@ -1,11 +1,21 @@
+.heroProyectoNauta{
+    background-image: url("../img/proyectos/nautalab/nauta_portada.jpg");
+}
+
+.heroProyectoBela{
+    background-image: url("../img/proyectos/bela/bela_portada.jpg");
+}
+
 .heroProyecto{
-    background-image: url("../img/proyectos/nauta_portada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 80vh;
     padding: 1.5rem 0.75rem 0;
 }
+
+
+//TARJETA PROYECTO
 
 .tarjetaProyecto{
     background-color: white;
@@ -15,9 +25,7 @@
     height: 312px;
 }
 
-.contenidoTarjetaProyecto{
-    margin: 0 0.4rem;
-}
+.contenidoTarjetaProyecto{margin: 0 0.4rem;}
 
 .categoria{
     text-transform: uppercase;
@@ -30,3 +38,155 @@
 .nombreProyecto, .nombreAgencia{color: $c-sec_text;}
 
 .nombreAgencia, .descripcionProyecto, .anoProyecto, .url{margin-bottom:0.75rem;}
+
+
+//STYLE GUIDE BLOCK
+
+.linea{margin-bottom: 0.75rem;}
+
+.linea2{margin-bottom: 2rem}
+
+.tipoList{
+    list-style: inside;
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+}
+
+.recursosGraficos{margin-bottom: 1.5rem;}
+
+.recursoTitle{margin-bottom: 1.5rem;}
+
+.colorContainer{margin-bottom: 3rem;}
+
+.colorBoxes{
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.colorbox{
+    height: 3rem;
+    flex-basis: 40%;
+    flex-grow: 2;
+}
+
+.box1{background-color: #D8D8D8;}
+.box2{background-color: #9B9B9B;}
+.box3{background-color: #EDF7F6;}
+.box4{background-color: #3F51B5;}
+.box5{background-color: #364156;}
+.box6{background-color: #011638;}
+.box7{background-color: #FFEB3B;}
+.box8{background-color: #FFAB00;}
+
+.box1B{background-color: #E4E4E4;}
+.box2B{background-color: #9B9B9B;}
+.box3B{background-color: black;}
+.box4B{background-color: #C8AE4D;}
+
+.pictoContainer{
+    margin-bottom: 0.75rem;
+}
+
+.picto{
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.descripcion3proyecto{margin-bottom: 3rem;}
+
+.imgDispositivo{width:90%;}
+
+
+//PANTALLAS PROYECTO
+
+.pantallasProyecto{
+    background-color: #D8D8D8;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.pantalla{
+    width: 90%;
+    height: 100%;
+    max-width: 380px;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+
+//NAV PROYECTOS
+
+.titlenavProyectos{
+    color: $c-sec_text;
+    margin-bottom: 2.25rem;
+}
+
+.navProyectosItem{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+.navItem{
+    color: $c-main_action;
+    font-weight: bold;
+}
+
+.navProyectosList{max-width: 400px;}
+
+.arrowItem{height: 1rem;}
+
+
+
+/* RESPONSIVE MEDIUM SIZE */
+
+@media only screen and (min-width: $MQ-M){
+
+    .descripcion2proyecto,
+    .styleGuide,
+    .descripcionYDispositivo,
+    .styleGuide{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .heroProyecto{padding-left: 3rem;}
+    
+    .descripcion2proyecto{
+        padding-left: 2.5rem;
+        max-width: 500px;
+    }
+
+    .descripcion3proyecto{
+        width: 50%;
+    }
+
+    .colorBoxes{width: 322px;}
+
+    .tipoYColorContainer{
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .colorContainer{margin-left: 8rem;}
+
+    .descripcionYDispositivo{
+        display: flex;
+        box-sizing: border-box;
+        padding-left:0.75rem;
+    }
+
+    .imgDispositivo{
+        margin-left:3rem;
+        max-width: 498px;
+    }
+
+    .pantalla{ margin-right: 3rem;}
+
+}

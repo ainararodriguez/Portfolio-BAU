@@ -17,6 +17,7 @@ footer{
 
 .footerItems{
     line-height: 3rem;
+    color: $c-sec_action !important;
 }
 
 .credits{
@@ -57,6 +58,6 @@ hr{
     }
 
     .footerItems{
-        margin-right: 3rem;
+        margin:0 1.5rem;
     }
 }
