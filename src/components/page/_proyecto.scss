@@ -1,17 +1,14 @@
-.heroProyectoNauta{
-    background-image: url("../img/proyectos/nautalab/nauta_portada.jpg");
-}
-
-.heroProyectoBela{
-    background-image: url("../img/proyectos/bela/bela_portada.jpg");
-}
-
 .heroProyecto{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 80vh;
     padding: 1.5rem 0.75rem 0;
+
+    &-Nautalab{background-image: url("../img/proyectos/nautalab/nauta_portada.jpg");}
+    &-Bela{background-image: url("../img/proyectos/bela/bela_portada.jpg");}
+    &-Ellebia{background-image: url("../img/proyectos/ellebia/ellebia_principal.jpg");}
+    &-Residencia{background-image: url("../img/proyectos/residencia/portada_resi.jpg");}
 }
 
 
@@ -84,6 +81,18 @@
 .box3B{background-color: black;}
 .box4B{background-color: #C8AE4D;}
 
+.box1C{background-color: #CED66D;}
+.box2C{background-color: #4A4139;}
+.box3C{background-color: #E7DFEE;}
+.box4C{background-color: #7A6786;}
+
+.box1D{background-color: #FFC81E;}
+.box2D{background-color: #FFB018;}
+.box3D{background-color: #F36818;}
+.box4D{background-color: #C83C00;}
+.box5D{background-color: #4BA1B9;}
+.box6D{background-color: #326883;}
+
 .pictoContainer{
     margin-bottom: 0.75rem;
 }
@@ -101,12 +110,16 @@
 //PANTALLAS PROYECTO
 
 .pantallasProyecto{
-    background-color: #D8D8D8;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 3rem;
+
+    &-ellebia{background-color: #F1E6F0;}
+    &-nautalab{background-color: #D8D8D8;}
+    &-bela{background-color: #E9CE69;}
+    &-resi{background-color: #BAEAF4;}
 }
 
 .pantalla{
@@ -160,7 +173,8 @@
     
     .descripcion2proyecto{
         padding-left: 2.5rem;
-        max-width: 500px;
+        padding-top: 4rem;
+        //max-width: 500px;
     }
 
     .descripcion3proyecto{

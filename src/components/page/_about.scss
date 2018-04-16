@@ -9,6 +9,10 @@
     height: 100vh;
 }
 
+.hero-content{
+    padding-top: 4rem;
+}
+
 .about-description{
     margin-bottom: 3rem;
 }
@@ -101,13 +105,20 @@ text{
 
 /* RESPONSIVE MEDIUM SIZE */
 
+
 @media only screen and (min-width: $MQ-M){
+    
+    .hexagonsContainer, .timelines, .about-description, .hero-content{
+        max-width: 1024px;
+        margin: auto;
+    }
+    
     .hero{
         background-size: initial;
     }
 
     .hero-content{
-        padding-left: 1.5rem;
+        padding-left: 3rem;
     }
 
     .about-description{
@@ -127,8 +138,8 @@ text{
         display: flex;
     }
 
-    .softwaresItem{
+    .softwaresItem,{
         margin-left: 3rem;
-        margin-top: 62px;
+        margin-top: 3rem;
     }
 }

@@ -1,6 +1,7 @@
 /*MAIN*/
 
 .mainHome{
+    background-attachment: fixed;
     background-image: url("../img/mainfoto_small.png");
     background-repeat: no-repeat;
     background-position: right top;
@@ -32,6 +33,7 @@
 /*SECTIONS*/
 
 section{padding: 1.5rem;}
+#slide-2{padding: 0;}
 
 
 /*SECTION AREAS DE TRABAJO Y SOBRE MI*/
@@ -39,11 +41,17 @@ section{padding: 1.5rem;}
 .areasIcon, .sobremiIcon, .hablamosIcon{margin-bottom: 0.75rem}
 
 .areasTrabajoYSobremi{
+    background-attachment: fixed;
     background-image: url("../img/bcg_areas_small.jpg");
     background-size: cover;
-    background-position: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: $c-negative;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.areasTrabajoYSobremiContent{
+    margin: 3rem 1.5rem 0rem 3rem;
 }
 
 .lineList{display: flex;}
@@ -82,7 +90,6 @@ section{padding: 1.5rem;}
         max-width: 1024px;
         display: flex;
         justify-content: flex-start;
-        margin: auto;
     }
     .sobreMi{
         width: 40%;

@@ -1,11 +1,16 @@
 $(document).ready(function(){
+// Init Skrollr
+var s = skrollr.init();
+ 
+// Refresh Skrollr after resizing our sections
+s.refresh($('.homeSlide'));
+    
     var ultimaPosicionScroll = $(document).scrollTop();
     $(window).scroll(function(event){
         var posicionScroll = $(document).scrollTop();
         if(posicionScroll>ultimaPosicionScroll && posicionScroll > $(".mainHome").outerHeight()+$("nav").outerHeight()){
             $("nav").css("visibility", "hidden");
             $("nav").css("opacity", "0");
-
         }
         else{
             $("nav").css("visibility", "visible");
