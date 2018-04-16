@@ -1,7 +1,7 @@
 /*MAIN*/
 
 .mainHome{
-    background-image: url("../img/mainfoto_small.png");
+    background-image: url("./img/mainfoto_small.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-color: $c-sec_action;
@@ -39,7 +39,7 @@ section{padding: 1.5rem;}
 .areasIcon, .sobremiIcon, .hablamosIcon{margin-bottom: 0.75rem}
 
 .areasTrabajoYSobremi{
-    background-image: url("../img/bcg_areas_small.jpg");
+    background-image: url("./img/bcg_areas_small.jpg");
     background-size: cover;
     background-position: 50%;
     color: $c-negative;
@@ -65,7 +65,7 @@ section{padding: 1.5rem;}
     section{padding-left: 3rem; }
     
     .mainHome{
-        background-image: url("../img/mainfoto_medium.jpg");
+        background-image: url("./img/mainfoto_medium.jpg");
         padding-left: 3rem;
     }
 

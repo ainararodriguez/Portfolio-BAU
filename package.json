@@ -1,0 +1,35 @@
+{
+  "name": "codigo_portfolio_2018",
+  "version": "1.0.0",
+  "description": "Mi proyecto de Master",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo 'Congratulations!! \nYou just run your first NPM script 👏 👏 👍\nNow try running: npm start \n '",
+    "start": "parcel src/index.html watch -p 8888",
+    "deploy": "npm run build && gh-pages -d dist",
+    "build": "parcel build src/index.html --public-url ./ --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainararodriguez/Portfolio-BAU.git"
+  },
+  "keywords": [
+    "parcel",
+    "javascript",
+    "BAU",
+    "frontend"
+  ],
+  "author": "Ainara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ainararodriguez/Portfolio-BAU/issues"
+  },
+  "homepage": "https://github.com/ainararodriguez/Portfolio-BAU#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.6.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "gh-pages": "^1.1.0"
+  }
+}
