@@ -19,7 +19,11 @@
 		init: function(options) {
 			return _instance || new Skrollr(options);
 		},
+<<<<<<< HEAD
 		VERSION: '0.6.21'
+=======
+		VERSION: '0.6.17'
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 	};
 
 	//Minify optimization.
@@ -270,7 +274,11 @@
 
 		//A custom check function may be passed.
 		_isMobile = ((options.mobileCheck || function() {
+<<<<<<< HEAD
 			return (/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera);
+=======
+			return (/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera);
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 		})());
 
 		if(_isMobile) {
@@ -401,20 +409,33 @@
 
 				var constant = match[1];
 
+<<<<<<< HEAD
 				if(constant) {
 					//Strip the underscore prefix.
 					kf.constant = constant.substr(1);
 				}
 
 				//Get the key frame offset.
+=======
+				//If there is a constant, get it's value or fall back to 0.
+				constant = constant && _constants[constant.substr(1)] || 0;
+
+				//Parse key frame offset. If undefined will be casted to 0.
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 				var offset = match[2];
 
 				//Is it a percentage offset?
 				if(/p$/.test(offset)) {
 					kf.isPercentage = true;
+<<<<<<< HEAD
 					kf.offset = (offset.slice(0, -1) | 0) / 100;
 				} else {
 					kf.offset = (offset | 0);
+=======
+					kf.offset = ((offset.slice(0, -1) | 0) + constant) / 100;
+				} else {
+					kf.offset = (offset | 0) + constant;
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 				}
 
 				var anchor1 = match[3];
@@ -432,7 +453,13 @@
 					} else if(!kf.isPercentage) {
 						//For data-start we can already set the key frame w/o calculations.
 						//#59: "scale" options should only affect absolute mode.
+<<<<<<< HEAD
 						kf.offset = kf.offset * _scale;
+=======
+						kf.frame = kf.offset * _scale;
+
+						delete kf.offset;
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 					}
 				}
 				//"relative" mode, where numbers are relative to anchors.
@@ -718,11 +745,14 @@
 
 					break;
 				case EVENT_TOUCHMOVE:
+<<<<<<< HEAD
 					//Prevent default event on touchIgnore elements in case they don't have focus yet.
 					if(rxTouchIgnoreTags.test(currentElement.tagName) && document.activeElement !== currentElement) {
 						e.preventDefault();
 					}
 
+=======
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 					deltaY = currentTouchY - lastTouchY;
 					deltaTime = currentTouchTime - lastTouchTime;
 
@@ -790,6 +820,7 @@
 	};
 
 	/**
+<<<<<<< HEAD
 	 * Updates key frames which depend on others / need to be updated on resize.
 	 * That is "end" in "absolute" mode and all key frames in "relative" mode.
 	 * Also handles constants, because they may change on resize.
@@ -797,6 +828,12 @@
 	var _updateDependentKeyFrames = function() {
 		var viewportHeight = documentElement.clientHeight;
 		var processedConstants = _processConstants();
+=======
+	 * Updates key frames which depend on others.
+	 * That is "end" in "absolute" mode and all key frames in "relative" mode.
+	 */
+	var _updateDependentKeyFrames = function() {
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 		var skrollable;
 		var element;
 		var anchorTarget;
@@ -806,8 +843,11 @@
 		var kf;
 		var skrollableIndex;
 		var skrollablesLength;
+<<<<<<< HEAD
 		var offset;
 		var constantValue;
+=======
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 
 		//First process all relative-mode elements and find the max key frame.
 		skrollableIndex = 0;
@@ -825,6 +865,7 @@
 			for(; keyFrameIndex < keyFramesLength; keyFrameIndex++) {
 				kf = keyFrames[keyFrameIndex];
 
+<<<<<<< HEAD
 				offset = kf.offset;
 				constantValue = processedConstants[kf.constant] || 0;
 
@@ -833,6 +874,13 @@
 				if(kf.isPercentage) {
 					//Convert the offset to percentage of the viewport height.
 					offset = offset * viewportHeight;
+=======
+				var offset = kf.offset;
+
+				if(kf.isPercentage) {
+					//Convert the offset to percentage of the viewport height.
+					offset = offset * documentElement.clientHeight;
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 
 					//Absolute + percentage mode.
 					kf.frame = offset;
@@ -846,8 +894,11 @@
 					_reset(element, true);
 				}
 
+<<<<<<< HEAD
 				kf.frame += constantValue;
 
+=======
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 				//Only search for max key frame when forceHeight is enabled.
 				if(_forceHeight) {
 					//Find the max key frame, but don't use one of the data-end ones for comparison.
@@ -875,10 +926,15 @@
 			for(; keyFrameIndex < keyFramesLength; keyFrameIndex++) {
 				kf = keyFrames[keyFrameIndex];
 
+<<<<<<< HEAD
 				constantValue = processedConstants[kf.constant] || 0;
 
 				if(kf.isEnd) {
 					kf.frame = _maxKeyFrame - kf.offset + constantValue;
+=======
+				if(kf.isEnd) {
+					kf.frame = _maxKeyFrame - kf.offset;
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 				}
 			}
 
@@ -1445,7 +1501,11 @@
 
 		if(_forceHeight && !_isMobile) {
 			//"force" the height.
+<<<<<<< HEAD
 			body.style.height = (_maxKeyFrame + documentElement.clientHeight-80) + 'px';
+=======
+			body.style.height = (_maxKeyFrame + documentElement.clientHeight) + 'px';
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 		}
 
 		//The scroll offset may now be larger than needed (on desktop the browser/os prevents scrolling farther than the bottom).
@@ -1460,6 +1520,7 @@
 	};
 
 	/*
+<<<<<<< HEAD
 	 * Returns a copy of the constants object where all functions and strings have been evaluated.
 	 */
 	var _processConstants = function() {
@@ -1486,6 +1547,8 @@
 	};
 
 	/*
+=======
+>>>>>>> 4b06adf803ca447647a3e251a13be7d44926f0cc
 	 * Returns the height of the document.
 	 */
 	var _getDocumentHeight = function() {
